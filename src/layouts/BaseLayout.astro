@@ -1,0 +1,19 @@
+---
+import { MainNavigation } from "../components/react/MainNavigation.jsx";
+const { title } = Astro.props;
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title} | Academia de Ajedrez</title>
+    </head>
+    <body>
+        <MainNavigation client:visible />
+        <h1>{title} | Academia de Ajedrez</h1>
+        <slot />
+    </body>
+</html>
