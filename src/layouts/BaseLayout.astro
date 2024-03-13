@@ -13,7 +13,7 @@ const { title } = Astro.props;
         <title>{title} | Academia de Ajedrez</title>
     </head>
     <body>
-        <MainNavigation client:visible />
+        <MainNavigation client:load />
         <h1>{title} | Academia de Ajedrez</h1>
         <slot />
         <Footer />
