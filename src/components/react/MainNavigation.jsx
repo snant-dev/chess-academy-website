@@ -10,7 +10,7 @@ import {
     Link,
     Image
 } from "@nextui-org/react";
-import LogoPlaceHolder from "../../../public/LogoPlaceHolder.svg";
+import LogoPlaceHolder from "../../assets/img/LogoPlaceHolder.svg";
 
 const menuItems = [
     { text: "Inicio", link: "/" },

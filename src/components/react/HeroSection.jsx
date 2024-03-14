@@ -27,9 +27,10 @@ export const HeroSection = ({ carrouselImages }) => {
         <section className="relative">
             <CarrouselImage
                 key={carrouselImages[indexImage].src}
+                alt="Imágenes de niños, jovenes, adultos y ancianos disfrutando del ajedrez"
                 src={carrouselImages[indexImage].src}
             />
-            <div className="absolute top-1/2 text-4xl left-8 py-1 z-10">
+            <div className="hidden sm:block absolute top-1/2 text-4xl left-8 py-1 z-10">
                 <Button onPress={() => handleNextImage(-1)}
                     isIconOnly
                     aria-label="Siguiente foto"
@@ -39,7 +40,7 @@ export const HeroSection = ({ carrouselImages }) => {
                     <FaChevronLeft />
                 </Button>
             </div>
-            <div className="absolute top-1/2 text-4xl right-8 py-1 z-10">
+            <div className="hidden sm:block absolute top-1/2 text-4xl right-8 py-1 z-10">
                 <Button onPress={() => handleNextImage(1)}
                     isIconOnly
                     aria-label="Anterior foto"
