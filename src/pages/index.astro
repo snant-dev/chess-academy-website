@@ -1,8 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { HeroSection } from "../components/react/HeroSection.jsx";
-// const carrouselImages = await Astro.glob("../assets/img/carrousel/*.{jpg,jpeg,png")
-import { carrouselImages } from "../scripts/helpers/carrouselData.js";
+// const carrouselImages = await Astro.glob("/src/assets/img/carrousel/*.{jpg,jpeg,png}");
+const dataImages = await Astro.glob("/src/scripts/helpers/carrouselData.js");
+const { carrouselImages } = dataImages[0];
+console.log(carrouselImages);
 ---
 
 <BaseLayout title="Inicio">
