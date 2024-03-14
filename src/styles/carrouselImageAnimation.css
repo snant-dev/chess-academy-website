@@ -1,0 +1,13 @@
+.carrousel-image-animation {
+    animation: show 1s backwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

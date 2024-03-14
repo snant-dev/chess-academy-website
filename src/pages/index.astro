@@ -1,42 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { Button } from "@nextui-org/react";
+import { HeroSection } from "../components/react/HeroSection.jsx";
+import { carrouselImages } from "../scripts/helpers/carrouselData.js";
 ---
 
 <BaseLayout title="Inicio">
 	<main>
-		<section class="relative">
-			<img
-				class="h-[90vh] bg-cover bg-center object-cover w-full block"
-				src="/assets/img/abuelos-jugando-ajedrez.jpg"
-				alt=""
-			/>
-			<div class="absolute top-0 h-full bg-black/25 w-full">
-				<div class="container h-full mx-auto">
-					<div class="grid grid-cols-12 h-full content-center">
-						<div class="col-start-3 col-end-9 text-white">
-							<h1 class="text-4xl lg:text-7xl mb-4">
-								Domina el Tablero
-							</h1>
-							<p class="mb-6 lg:text-lg">
-								Desarrolla tu genio estratégico desde cualquier
-								lugar del mundo con nuestras lecciones
-								magistrales y entrenamiento personalizado.
-							</p>
-							<div class="flex gap-4">
-								<Button radius="none" variant="solid"
-									>Uno</Button
-								>
-								<Button
-									className="text-white"
-									radius="none"
-									variant="bordered">Dos</Button
-								>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<HeroSection carrouselImages={carrouselImages} client:visible />
 	</main>
 </BaseLayout>
