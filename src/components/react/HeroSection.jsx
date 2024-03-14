@@ -26,9 +26,8 @@ export const HeroSection = ({ carrouselImages }) => {
     return (
         <section className="relative">
             <CarrouselImage
-                key={carrouselImages[indexImage].url}
-                src={carrouselImages[indexImage].url}
-                alt={carrouselImages[indexImage].altText}
+                key={carrouselImages[indexImage].src}
+                src={carrouselImages[indexImage].src}
             />
             <div className="absolute top-1/2 text-4xl left-8 py-1 z-10">
                 <Button onPress={() => handleNextImage(-1)}
