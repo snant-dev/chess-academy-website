@@ -1,4 +1,4 @@
-const baseUrl = "/src/assets/img/";
+const baseUrl = "/src/assets/img/carrousel/";
 
 export const carrouselImages = [
     {
