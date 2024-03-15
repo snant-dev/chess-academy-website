@@ -1,0 +1,36 @@
+---
+import { Button, Link } from "@nextui-org/react";
+import GiftImg from "../assets/img/giveaway.svg";
+---
+
+<section class="p-16 md:px-24 lg:px-32 flex flex-col">
+    <h2 class="text-4xl text-center mb-10 font-bold">
+        ¡Descubre el Ajedrez Hoy!
+    </h2>
+    <div
+        class="flex flex-col gap-4 md:flex-row md:items-center sm:items-center mb-8 xl:max-w-[1024px] xl:mx-auto"
+    >
+        <div class="md:text-lg">
+            <p>¿Eres nuevo en el mundo del ajedrez?</p>
+            <p>
+                ¡Bienvenido! En nuestra academia, te ofrecemos un curso creado
+                especialmente para ti, totalmente gratuito. Aprende las reglas
+                básicas, estrategias fundamentales y comienza tu viaje hacia la
+                maestría ajedrecística de manera divertida y educativa.
+            </p>
+        </div>
+
+        <div class="sm:max-w-[450px]">
+            <img
+                class="mx-auto block"
+                src={GiftImg.src}
+                alt="Una joven contenta sobre una caja de regalo gigante"
+            />
+        </div>
+    </div>
+    <Button className="self-center" radius="none" client:visible>
+        <Link className="text-black " href="/free-course/">
+            Comenzar Curso Gratuito
+        </Link>
+    </Button>
+</section>
