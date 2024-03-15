@@ -1,10 +1,9 @@
 ---
-import { Image } from "astro:assets";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 import KingQueenImg from "../assets/img/king-queen.svg";
 ---
 
-<section class="">
+<section>
     <div class="bg-[#ff8c00c2] lg:bg-inherit">
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div
@@ -54,9 +53,9 @@ import KingQueenImg from "../assets/img/king-queen.svg";
                 </div>
             </div>
             <div class="flex justify-center bg-inherit lg:bg-[#ff8c00c2]">
-                <Image
+                <img
                     class="w-full sm:w-auto"
-                    src={KingQueenImg}
+                    src={KingQueenImg.src}
                     alt="Un rey blanco y una dama negra jugando en un subibaja"
                 />
             </div>
