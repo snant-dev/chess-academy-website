@@ -5,7 +5,14 @@ import FreeCourseSection from "../components/FreeCourseSection.astro";
 
 <BaseLayout title="Curso Gratuito">
     <main>
-        <p>Desde free-course</p>
-        <FreeCourseSection />
+        <FreeCourseSection
+            courseName="Curso Básico"
+            youtubePlaylist="https://www.youtube.com/embed/videoseries?si=bHab7iRdOmI7EIP8&list=PLyOF_3OuFCs4CLi4aXZ_wD2qzb2VVMoBO"
+            showArrow={true}
+        />
+        <FreeCourseSection
+            courseName="Curso Intermedio"
+            youtubePlaylist="https://www.youtube.com/embed/videoseries?si=Q-hmWfN4bYF0T3ol&list=PLyOF_3OuFCs5DzSPCXqChZaAvsa4AE1M_"
+        />
     </main>
 </BaseLayout>
