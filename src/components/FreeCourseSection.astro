@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 const { courseName, youtubePlaylist, showArrow } = Astro.props;
 import flexingArrow from "../assets/img/flexing-arrow.svg";
 ---
@@ -15,9 +14,9 @@ import flexingArrow from "../assets/img/flexing-arrow.svg";
             showArrow && (
                 <div class="hidden sm:block absolute top-4 right-10">
                     <div class="relative">
-                        <Image
+                        <img
                             class="w-32"
-                            src={flexingArrow}
+                            src={flexingArrow.src}
                             alt="Flecha apuntando hacia la lista de reproducción"
                         />
                         <span class="absolute top-14 -right-4 font-semibold -rotate-12">
