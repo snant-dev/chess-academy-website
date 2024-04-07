@@ -4,7 +4,10 @@ import GiftImg from "../assets/img/giveaway.svg";
 ---
 
 <section class="px-8 py-20 sm:px-24 lg:px-32 flex flex-col">
-  <h2 class="text-4xl text-center mb-10 md:mb-16 font-bold">
+  <!-- <h2 class="text-4xl text-center mb-10 md:mb-16 font-bold"> -->
+  <h2
+    class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center"
+  >
     ¡Descubre el Ajedrez Hoy!
   </h2>
   <div
@@ -28,9 +31,10 @@ import GiftImg from "../assets/img/giveaway.svg";
       />
     </div>
   </div>
-  <Button className="self-center" radius="none" client:visible>
-    <Link className="text-black " href="/free-course/">
-      Comenzar Curso Gratuito
-    </Link>
-  </Button>
+  <Link
+    className="self-center flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-gray-800 transition duration-150 ease-in-out bg-[#ff8c00c2] border border-transparent rounded-md hover:bg-[#ffba67c2] focus:outline-none focus:shadow-outline "
+    href="/free-course/"
+  >
+    Comenzar Curso Gratuito
+  </Link>
 </section>

@@ -3,15 +3,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { HeroSection } from "../components/react/HeroSection.jsx";
 import OurGoalSection from "../components/OurGoalSection.astro";
 import DiscoverSection from "../components/DiscoverSection.astro";
+import PricingSection from "../components/PricingSection.astro";
 const carrouselImages = await Astro.glob(
-	"/src/assets/img/carrousel/*.{jpg,jpeg,png}",
+  "/src/assets/img/carrousel/*.{jpg,jpeg,png}"
 ).then((files) => files.map((file) => file.default));
 ---
 
 <BaseLayout title="Inicio">
-	<main>
-		<HeroSection carrouselImages={carrouselImages} client:visible />
-		<OurGoalSection />
-		<DiscoverSection />
-	</main>
+  <main>
+    <HeroSection carrouselImages={carrouselImages} client:visible />
+    <OurGoalSection />
+    <DiscoverSection />
+    <PricingSection />
+  </main>
 </BaseLayout>
