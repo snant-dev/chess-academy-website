@@ -26,13 +26,14 @@ export const HeroSection = ({ carrouselImages }) => {
   };
 
   return (
-    <section className="relative">
+    <section className="relative h-[90vh]">
       <CarrouselImage
         key={carrouselImages[indexImage].src}
         alt="Imágenes de niños, jovenes, adultos y ancianos disfrutando del ajedrez"
         src={carrouselImages[indexImage].src}
       />
-      <div className="hidden sm:block absolute top-1/2 text-4xl left-8 py-1 z-10">
+      {/* <div className="hidden sm:block absolute top-1/2 text-4xl left-8 py-1 z-10"> */}
+      <div className="hidden absolute top-1/2 text-4xl left-8 py-1 z-10">
         <Button
           onPress={() => handleNextImage(-1)}
           isIconOnly
@@ -42,7 +43,8 @@ export const HeroSection = ({ carrouselImages }) => {
           <FaChevronLeft />
         </Button>
       </div>
-      <div className="hidden sm:block absolute top-1/2 text-4xl right-8 py-1 z-10">
+      {/* <div className="hidden sm:block absolute top-1/2 text-4xl right-8 py-1 z-10"> */}
+      <div className="hidden absolute top-1/2 text-4xl right-8 py-1 z-10">
         <Button
           onPress={() => handleNextImage(1)}
           isIconOnly
@@ -52,30 +54,36 @@ export const HeroSection = ({ carrouselImages }) => {
           <FaChevronRight />
         </Button>
       </div>
-      <div className="absolute top-0 h-full bg-black/25 w-full">
-        <div className="container h-full mx-auto">
-          <div className="grid grid-cols-12 h-full content-center">
-            <div className="col-start-3 col-end-9 xl:col-end-8 text-white">
-              <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-                <span className="block">Caminos</span>
-                <span className="block font-medium text-3xl md:text-4xl xl:text-5xl">
-                  Academia de Ajedrez
-                </span>
-              </h1>
-              <p className="mb-6 lg:text-lg">
-                Desarrolla tu genio estratégico desde cualquier lugar del mundo
-                con nuestras lecciones magistrales y entrenamiento
-                personalizado.
-              </p>
-              <div className="flex gap-4">
-                <Button radius="none" variant="solid">
-                  Uno
-                </Button>
-                <Button className="text-white" radius="none" variant="bordered">
-                  Dos
-                </Button>
-              </div>
-            </div>
+
+      <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 bg-gradient-to-r"></div>
+      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-full lg:items-center lg:px-8">
+        <div className="max-w-xl text-center sm:text-left">
+          <h1 className="text-3xl font-extrabold sm:text-5xl">
+            Academia de Ajedrez
+            <strong className="block font-extrabold text-[#ff8c00c2]">
+              Caminos
+            </strong>
+          </h1>
+
+          <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+            Desarrolla tu genio estratégico desde cualquier lugar del mundo con
+            nuestras lecciones magistrales y entrenamiento personalizado.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4 text-center">
+            <a
+              href="#"
+              className="block w-full rounded bg-[#ff8c00c2] px-12 py-3 text-sm font-medium text-white shadow hover:bg-[#ff8c00e8] focus:outline-none focus:ring active:bg-[#ff8c00c2] sm:w-auto"
+            >
+              Inscribirme
+            </a>
+
+            <a
+              href="/#adventure"
+              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-[#ff8c00c2] shadow hover:text-[#ff8c00e8] focus:outline-none focus:ring active:text-[#ff8c00c2] sm:w-auto"
+            >
+              Saber Más
+            </a>
           </div>
         </div>
       </div>

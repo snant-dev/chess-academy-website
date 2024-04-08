@@ -1,5 +1,5 @@
 .carrousel-image-animation {
-    animation: show 1s backwards;
+    animation: show 2s ease-out backwards;
 }
 
 @keyframes show {
