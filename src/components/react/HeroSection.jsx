@@ -59,10 +59,10 @@ export const HeroSection = ({ carrouselImages }) => {
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-full lg:items-center lg:px-8">
         <div className="max-w-xl text-center sm:text-left">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
-            Academia de Ajedrez
-            <strong className="block font-extrabold text-[#ff8c00c2]">
+            <strong className="block font-extrabold text-[#ff8c00c2] sm:text-6xl">
               Caminos
             </strong>
+            Academia de Ajedrez
           </h1>
 
           <p className="mt-4 max-w-lg sm:text-xl/relaxed">
