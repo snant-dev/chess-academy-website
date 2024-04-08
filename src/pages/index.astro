@@ -4,6 +4,7 @@ import { HeroSection } from "../components/react/HeroSection.jsx";
 import OurGoalSection from "../components/OurGoalSection.astro";
 import DiscoverSection from "../components/DiscoverSection.astro";
 import PricingSection from "../components/PricingSection.astro";
+import PathsSection from "../components/PathsSection.astro";
 const carrouselImages = await Astro.glob(
   "/src/assets/img/carrousel/*.{jpg,jpeg,png}"
 ).then((files) => files.map((file) => file.default));
@@ -14,6 +15,7 @@ const carrouselImages = await Astro.glob(
     <HeroSection carrouselImages={carrouselImages} client:visible />
     <OurGoalSection />
     <DiscoverSection />
+    <PathsSection />
     <PricingSection />
   </main>
 </BaseLayout>

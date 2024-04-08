@@ -1,0 +1,67 @@
+---
+import PathImg from "../assets/img/journal-pointer.svg";
+import PathImg2 from "../assets/img/journal-tourist-with-map.svg";
+import { PathsTabs } from "./react/PathsTabs.jsx";
+---
+
+<section class="dark:bg-gray-800 bg-[#ff8c00c2] overflow-hidden">
+  <div
+    class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20 relative overflow-hidden md:min-h-[350px]"
+  >
+    <h2
+      class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+    >
+      <span class="block mb-2"> ¿Listo para la Aventura? </span>
+      <span class="block text-white">
+        Hoy es el mejor momento para empezar
+      </span>
+    </h2>
+
+    <div class="flex flex-row justify-start max-w-screen-lg mx-auto">
+      <div class="max-w-[200px] md:absolute hidden md:block w-1/3">
+        <img
+          class="block object-cover"
+          src={PathImg2.src}
+          alt="Cartel con diferentes destinos"
+        />
+      </div>
+      <p
+        class="sm:text-xl sm:font-light mt-4 max-w-sm lg:max-w-md mx-auto text-gray-700 w-2/3"
+      >
+        En nuestra academia hemos creado diferentes caminos pensando en ti y
+        contamos con los mejores profesionales para acompañarte en tu desarrollo
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="academy" class="px-8 py-20 sm:px-24 lg:px-32 flex flex-col">
+  <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+    <h2
+      class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+    >
+      Elije tu camino
+    </h2>
+    <p class="mb-5 font-light text-gray-700 sm:text-xl dark:text-gray-400">
+      En esta sección, te presentamos diferentes caminos para tu desarrollo en
+      el ajedrez. Descubre cuál se adapta mejor a tus objetivos.
+    </p>
+  </div>
+  <PathsTabs client:visible />
+</section>
+<!-- Divider -->
+<div class="w-full relative">
+  <svg
+    class="h-[180px] w-full fill-[#ff8c00] absolute"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1200 120"
+    preserveAspectRatio="none"
+  >
+    <rect x="1200" height="3.6"></rect>
+    <rect height="3.6"></rect>
+    <path
+      d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z"
+      class="shape-fill"></path>
+  </svg>
+</div>
