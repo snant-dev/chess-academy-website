@@ -5,6 +5,7 @@ import PriceCharacteristic from "./PriceCharacteristic.astro";
 const {
   title,
   price,
+  timeSpectrum = "mes",
   characteristics = [
     "Acceso a una clase grupal por semana",
     "Participación en 1 evento online mensual",
@@ -36,7 +37,7 @@ const {
       <span
         class="pt-8 ml-1 text-2xl font-medium leading-8 text-gray-500 dark:text-gray-400"
       >
-        /mes
+        /{timeSpectrum}
       </span>
     </div>
   </div>
