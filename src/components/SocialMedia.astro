@@ -1,0 +1,15 @@
+---
+const { socialMedia } = Astro.props;
+---
+
+{
+  socialMedia.map(({ Icon, link }) => (
+    <a
+      class="block rounded bg-[#ff8c00c2] px-6 py-3 text-xl font-medium text-white shadow hover:bg-[#ff8c00e8] focus:outline-none focus:ring active:bg-[#ff8c00c2] sm:w-auto"
+      href={link}
+      target="_blank"
+    >
+      {<Icon />}
+    </a>
+  ))
+}

@@ -1,9 +1,78 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import OurTeamSection from "../components/OurTeamSection.astro";
+import TeacherProfile from "../components/TeacherProfile.astro";
+
+import MaderImg from "../assets/img/teachers/clau_amura.jpg";
+import PablitoImg from "../assets/img/teachers/pablo_acosta.jpg";
+
+import {
+  SiLichess,
+  SiFacebook,
+  SiX,
+  SiYoutube,
+  SiInstagram,
+  SiTwitch,
+} from "react-icons/si";
+
+const socialMediaClauAmura = [
+  { Icon: SiFacebook, link: "https://lichess.org/@/SoyTeti" },
+  { Icon: SiLichess, link: "https://lichess.org/@/SoyTeti" },
+  { Icon: SiX, link: "https://lichess.org/@/SoyTeti" },
+];
 ---
 
 <BaseLayout title="Maestros">
-    <div class="container mx-auto">
-        <p>Hi desde Maestros!</p>
-    </div>
+  <OurTeamSection />
+  <div class="flex flex-col my-4 gap-8">
+    <TeacherProfile
+      name="Claudia Amura"
+      chessTitle="Woman Grand Master"
+      photo={MaderImg}
+      socialMedia={socialMediaClauAmura}
+    >
+      <p class="md:text-lg text-gray-500 text-base">
+        The best kept secret of The Bahamas is the country’s sheer size and
+        diversity. With 16 major islands, The Bahamas is an unmatched
+        destination
+      </p>
+      <p class="md:text-lg text-gray-500 text-base">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+        inventore doloribus pariatur, distinctio alias reprehenderit repellat
+        praesentium cumque non libero natus laboriosam, mollitia explicabo eos
+        assumenda. Sapiente doloremque necessitatibus magnam.
+      </p>
+      <p class="md:text-lg text-gray-500 text-base">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+        inventore doloribus pariatur, distinctio alias reprehenderit repellat
+        praesentium cumque non libero natus laboriosam, mollitia explicabo eos
+        assumenda. Sapiente doloremque necessitatibus magnam.
+      </p>
+    </TeacherProfile>
+    <TeacherProfile
+      name="Pablo Acosta"
+      chessTitle="International Master"
+      photo={PablitoImg}
+      socialMedia={socialMediaClauAmura}
+      isInverted={true}
+    >
+      <p class="md:text-lg text-gray-500 text-base">
+        The best kept secret of The Bahamas is the country’s sheer size and
+        diversity. With 16 major islands, The Bahamas is an unmatched
+        destination
+      </p>
+      <p class="md:text-lg text-gray-500 text-base">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+        inventore doloribus pariatur, distinctio alias reprehenderit repellat
+        praesentium cumque non libero natus laboriosam, mollitia explicabo eos
+        assumenda. Sapiente doloremque necessitatibus magnam.
+      </p>
+      <p class="md:text-lg text-gray-500 text-base">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+        inventore doloribus pariatur, distinctio alias reprehenderit repellat
+        praesentium cumque non libero natus laboriosam, mollitia explicabo eos
+        assumenda. Sapiente doloremque necessitatibus magnam.
+      </p>
+    </TeacherProfile>
+  </div>
 </BaseLayout>
