@@ -11,7 +11,7 @@ export const FAQs = () => {
       title:
         '¿Cómo funciona la selección del "Camino" de aprendizaje en la academia?',
       content:
-        "En nuestra academia de ajedrez online, hemos creado diferentes caminos de aprendizaje con la intención de adaptarnos mejor a tus necesidades y objetivos. ¿Eres alguien que busca mejorar en competencias de torneos y alcanzar un alto rendimiento en el ajedrez? ¿O tal vez prefieres aprender, mejorar tus habilidades o tener un nuevo pasatiempo de una manera más relajada y divertida? Sea cual sea tu motivación, nuestros diferentes caminos están diseñados para brindarte una experiencia de aprendizaje personalizada y gratificante, guiándote hacia el camino que mejor se ajuste a tus metas y preferencias en el mundo del ajedrez.",
+        "En nuestra academia de ajedrez online, hemos creado diferentes caminos de aprendizaje con la intención de adaptarnos mejor a tus necesidades y objetivos. ¿Eres alguien que busca mejorar en competencias de torneos y alcanzar un alto rendimiento en el ajedrez? ¿O tal vez prefieres aprender, mejorar tus habilidades o tener un nuevo pasatiempo de una manera más relajada y divertida? Sea cual fuere tu motivación, nuestros diferentes caminos están diseñados para brindarte una experiencia de aprendizaje personalizada y gratificante, guiándote hacia el camino que mejor se ajuste a tus metas y preferencias en el mundo del ajedrez.",
     },
     {
       title:
@@ -45,7 +45,7 @@ export const FAQs = () => {
     {
       title: "¿Cuál es la duración y frecuencia de las clases grupales?",
       content:
-        'La duración de nuestras clases grupales es de 90 minutos. La frecuencia de las clases grupales puede variar según el plan seleccionado y el "Camino" elegido, y estará especificada en la información detallada de cada curso.',
+        'La duración de nuestras clases grupales es de 60 minutos. La frecuencia de las clases grupales puede variar según el plan seleccionado y el "Camino" elegido, y estará especificada en la información detallada de cada curso.',
     },
     {
       title:
