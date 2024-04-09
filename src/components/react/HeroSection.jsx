@@ -80,7 +80,7 @@ export const HeroSection = ({ carrouselImages }) => {
 
             <a
               href="/#adventure"
-              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-[#ff8c00c2] shadow hover:text-[#ff8c00e8] focus:outline-none focus:ring active:text-[#ff8c00c2] sm:w-auto"
+              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-[#ff8c00] shadow hover:text-[#ff8c00e8] focus:outline-none focus:ring active:text-[#ff8c00c2] sm:w-auto"
             >
               Saber Más
             </a>

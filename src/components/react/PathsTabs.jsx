@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tabs, Tab } from "@nextui-org/react";
 
 export const PathsTabs = () => {
@@ -12,7 +12,8 @@ export const PathsTabs = () => {
         variant="underlined"
         size="lg"
         classNames={{
-          tabList: "gap-12 w-full relative rounded-none p-0  border-divider",
+          tabList:
+            "gap-2 sm:gap-12 w-full relative rounded-none p-0  border-divider",
           cursor: "w-full bg-[#ff8c00]",
           tab: "max-w-fit px-0 h-12 ",
           tabContent: "group-data-[selected=true]:text-[#ff8c00]",
