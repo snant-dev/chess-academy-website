@@ -66,41 +66,7 @@ export const TestimonialsSection = () => {
               )
             )}
           </div>
-          {/* <div className="bg-white py-8 px-8 sm:py-14 sm:px-14 rounded-xl">
-            <ul>
-              {testimonials.map((item, idx) =>
-                currentTestimonial == idx ? (
-                  <li key={idx}>
-                    <figure>
-                      <blockquote>
-                        <p className=" text-gray-600  text-xl font-medium sm:text-2xl relative">
-                          <FaQuoteLeft className="hidden sm:block w-10 h-10 absolute sm:w-14 sm:h-14 -top-12 -left-8 fill-[#ff8c00c2]" />
-                          {item.quote}
-                          <FaQuoteRight className="hidden sm:block w-10 h-10 absolute sm:w-14 sm:h-14 -right-8 fill-[#ff8c00c2]" />
-                        </p>
-                      </blockquote>
-                      <div className="mt-6">
-                        <img
-                          src={item.avatar}
-                          className="w-14 h-14 sm:w-24 sm:h-24 mx-auto rounded-full object-cover"
-                        />
-                        <div className="mt-3">
-                          <span className="block text-gray-800 font-semibold text-large">
-                            {item.name}
-                          </span>
-                          <span className="block text-gray-600 text-sm mt-0.5 max-w-sm mx-auto">
-                            {item.title}
-                          </span>
-                        </div>
-                      </div>
-                    </figure>
-                  </li>
-                ) : (
-                  ""
-                )
-              )}
-            </ul>
-          </div> */}
+
           <div className="mt-6">
             <ul className="flex gap-x-3 justify-center">
               {testimonials.map((_, idx) => (

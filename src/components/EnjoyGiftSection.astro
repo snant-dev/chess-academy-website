@@ -2,25 +2,35 @@
 import GiftImage from "../assets/img/special-offers.svg";
 ---
 
-<section class="px-8 py-20 sm:px-24 lg:px-32 flex flex-col bg-[#ff8c00c2]">
-  <h1 class="text-4xl text-center mb-10 md:mb-16 font-bold capitalize">
-    ¡Disfruta tu regalo!
-  </h1>
-  <div
-    class="flex flex-col gap-4 md:flex-row md:items-center sm:items-center mb-8 xl:max-w-[1024px] xl:mx-auto"
-  >
-    <div class="md:text-lg md:w-1/2">
-      <p>
-        Sumérgete en nuestros cursos gratuitos y comienza tu viaje hacia la
-        maestría ajedrecística con la guía de la WGM Claudia Amura, una experta
-        reconocida a nivel internacional.
-      </p>
+<section class="py-14 dark:bg-gray-800 bg-[#ff8c00c2] overflow-hidden">
+  <div class="max-w-screen-lg mx-auto px-4 md:px-8">
+    <div class="mx-auto text-center">
+      <h2
+        class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        <span class="block mb-2">¡Disfruta tu regalo!</span>
+        <span class="block text-white"> Aqui comienza tu aventura </span>
+      </h2>
+      <div class="bg-white py-8 px-8 sm:py-14 sm:px-14 rounded-xl">
+        <div
+          class="flex flex-col md:flex-row gap-4 sm:gap-8 md:gap-12 md:items-center md:relative"
+        >
+          <p
+            class="md:w-4/6 text-gray-600 text-xl font-medium relative md:leading-relaxed"
+          >
+            Sumérgete en nuestros cursos gratuitos y comienza tu viaje hacia la
+            maestría ajedrecística con la guía de la WGM Claudia Amura, una
+            experta reconocida a nivel internacional.
+          </p>
+          <div class="md:w-2/6 mt-6">
+            <img
+              src={GiftImage.src}
+              class="md:w-96 md:h-96 mx-auto object-cover md:absolute md:-top-10"
+              alt="Una joven contenta sobre una caja de regalo gigante"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-
-    <img
-      class="mx-auto block object-cover md:w-1/2"
-      src={GiftImage.src}
-      alt="Una joven contenta sobre una caja de regalo gigante"
-    />
   </div>
 </section>
