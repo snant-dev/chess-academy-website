@@ -26,8 +26,8 @@ export const TestimonialsSection = () => {
 
   return (
     <section className="py-14 dark:bg-gray-800 bg-[#ff8c00c2] overflow-hidden">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-        <div className="max-w-3xl mx-auto text-center">
+      <div className="max-w-screen-lg mx-auto px-4 md:px-8">
+        <div className=" mx-auto text-center">
           <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             <span className="block mb-2">Casos de Éxito</span>
             <span className="block text-white">
@@ -35,6 +35,38 @@ export const TestimonialsSection = () => {
             </span>
           </h2>
           <div className="bg-white py-8 px-8 sm:py-14 sm:px-14 rounded-xl">
+            {testimonials.map((item, idx) =>
+              currentTestimonial == idx ? (
+                <div
+                  className="flex flex-col md:flex-row gap-4 sm:gap-8 md:gap-12 md:items-center"
+                  key={idx}
+                >
+                  <p className="md:order-2 md:w-4/6 text-gray-600  text-xl font-medium sm:text-2xl relative">
+                    <FaQuoteLeft className="hidden sm:block w-10 h-10 absolute sm:w-14 sm:h-14 -top-12 -left-8 fill-[#ff8c00c2]" />
+                    {item.quote}
+                    <FaQuoteRight className="hidden sm:block w-10 h-10 absolute sm:w-14 sm:h-14 -right-8 fill-[#ff8c00c2]" />
+                  </p>
+                  <div className="md:order-1 md:w-2/6 mt-6">
+                    <img
+                      src={item.avatar}
+                      className="w-40 h-40 sm:w-48 sm:h-48 mx-auto rounded-md object-cover"
+                    />
+                    <div className="mt-3">
+                      <span className="block text-gray-800 font-semibold text-large">
+                        {item.name}
+                      </span>
+                      <span className="block text-gray-600 text-sm mt-0.5 max-w-sm mx-auto">
+                        {item.title}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                ""
+              )
+            )}
+          </div>
+          {/* <div className="bg-white py-8 px-8 sm:py-14 sm:px-14 rounded-xl">
             <ul>
               {testimonials.map((item, idx) =>
                 currentTestimonial == idx ? (
@@ -68,7 +100,7 @@ export const TestimonialsSection = () => {
                 )
               )}
             </ul>
-          </div>
+          </div> */}
           <div className="mt-6">
             <ul className="flex gap-x-3 justify-center">
               {testimonials.map((_, idx) => (
