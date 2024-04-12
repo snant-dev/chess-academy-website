@@ -66,8 +66,10 @@ export const HeroSection = ({ carrouselImages }) => {
           </h1>
 
           <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-            Desarrolla tu genio estratégico desde cualquier lugar del mundo con
-            nuestras lecciones magistrales y entrenamiento personalizado.
+            Desarrolla y potencia tus habilidades implementando la práctica del
+            ajedrez como herramienta transversal. Además, si es tu talento
+            principal, con nosotros encontrarás el camino para hacer de esto tu
+            profesión.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
