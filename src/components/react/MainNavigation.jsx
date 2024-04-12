@@ -10,7 +10,7 @@ import {
   Link,
   Image,
 } from "@nextui-org/react";
-import LogoPlaceHolder from "../../assets/img/LogoPlaceHolder.svg";
+import LogoAcademia from "../../assets/img/academia_caminos_logo.svg";
 
 const menuItems = [
   { text: "Inicio", link: "/" },
@@ -30,7 +30,8 @@ export const MainNavigation = () => {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Image src={LogoPlaceHolder.src} />
+          <img className="h-12 " src={LogoAcademia.src} alt="" />
+          {/* <Image src={LogoAcademia.src} /> */}
         </NavbarBrand>
       </NavbarContent>
 
