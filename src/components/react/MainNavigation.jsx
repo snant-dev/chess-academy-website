@@ -30,7 +30,9 @@ export const MainNavigation = () => {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <img className="h-12 " src={LogoAcademia.src} alt="" />
+          <a href="#top">
+            <img className="h-12 " src={LogoAcademia.src} alt="" />
+          </a>
           {/* <Image src={LogoAcademia.src} /> */}
         </NavbarBrand>
       </NavbarContent>
