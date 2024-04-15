@@ -34,16 +34,20 @@ export const PathsTabs = () => {
             <h3 className="mb-8 mt-4 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">
               Ajedrez para la vida
             </h3>
-            <p className="mb-4 leading-loose text-left">
+            <p className="mb-4 leading-loose text-justify">
               ¿Te gustaría sumergirte en el fascinante mundo del ajedrez y
               aprender a jugar por puro placer, disfrutando cada partida al
               máximo? ¿O tal vez prefieres hacer del ajedrez tu pasatiempo
               favorito, dedicando tiempo a desafiar tu mente y divertirte con
               cada movimiento? ¿Te interesa mejorar tus habilidades de lógica y
               concentración, beneficiándote en diferentes aspectos de tu vida
-              diaria?
+              diaria? ¿Te gustaría formar parte de nuestra familia ajedrecística
+              compartiendo espacios de encuentro, dialogo, aprendizaje y
+              entretenimiento? ¿Quieres ampliar tus conocimientos y conocer la
+              multiplicidad de herramientas que te ayudarán a superarte cada
+              día?
             </p>
-            <p className="leading-loose text-left">
+            <p className="leading-loose text-justify">
               Si tu respuesta es ¡Sí! Entonces este es tu camino. ¡Te invitamos
               a explorar el camino "Ajedrez para la Vida" y descubre cómo el
               ajedrez puede ser una experiencia enriquecedora y gratificante
@@ -63,7 +67,7 @@ export const PathsTabs = () => {
             <h3 className="mb-8 mt-4 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">
               Ajedrez de competición
             </h3>
-            <p className="mb-4 leading-loose text-left">
+            <p className="mb-4 leading-loose text-justify">
               ¿Estás listo para llevar tu juego de ajedrez al siguiente nivel y
               alcanzar el alto rendimiento en competiciones? ¿Te emociona la
               idea de ser guiado por maestros de ajedrez experimentados, que te
@@ -72,9 +76,14 @@ export const PathsTabs = () => {
               disciplina y el entrenamiento requerido para perfeccionar tus
               habilidades y tácticas de juego? ¿Eres de las personas apasionadas
               por la competición, deseando enfrentarte a oponentes de alto nivel
-              y demostrar tu habilidad en el tablero?
+              y demostrar tu habilidad en el tablero? ¿Quieres que te orientemos
+              para usar las mejores herramientas y estrategias para alcanzar un
+              título internacional? ¿Te interesa formarte para hacer del ajedrez
+              una profesión, perfeccionándote para acompañar en diferentes
+              ámbitos, como la dirigencia, el arbitraje, la educación y el
+              entrenamiento de alto rendimiento?
             </p>
-            <p className="leading-loose text-left">
+            <p className="leading-loose text-justify">
               ¡Descubre el camino "Ajedrez de Competición" y prepárate para
               desafiar tus límites y alcanzar nuevos logros en el apasionante
               mundo del ajedrez competitivo!
