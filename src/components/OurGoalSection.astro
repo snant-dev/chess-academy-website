@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 import KingQueenImg from "../assets/img/king-queen.svg";
 ---
@@ -60,16 +59,11 @@ import KingQueenImg from "../assets/img/king-queen.svg";
         </div>
       </div>
       <div class="flex justify-center bg-inherit lg:bg-[#ff8c00c2]">
-        <Image
-          src={KingQueenImg}
-          alt="Un rey blanco y una dama negra jugando en un subibaja"
-          class="w-full sm:w-auto"
-        />
-        <!-- <img
+        <img
           class="w-full sm:w-auto"
           src={KingQueenImg.src}
           alt="Un rey blanco y una dama negra jugando en un subibaja"
-        /> -->
+        />
       </div>
     </div>
   </div>
