@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import SocialMedia from "./SocialMedia.astro";
 const {
   photo,
@@ -15,11 +17,16 @@ const {
   <div
     class=`w-full md:w-1/2 bg-white grid place-items-center ${isInverted ? "md:order-2":""}`
   >
-    <img
+    <Image
+      class="h-full object-cover rounded-xl"
+      src={photo}
+      alt={`Foto de ${chessTitle} ${name}`}
+    />
+    <!-- <img
       class="h-full object-cover rounded-xl"
       src={photo.src}
       alt={`Foto de ${chessTitle} ${name}`}
-    />
+    /> -->
   </div>
   <div
     class=`w-full md:w-1/2 bg-white flex flex-col p-3 gap-2 ${isInverted ? "md:order-1":""}`
