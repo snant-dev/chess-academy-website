@@ -15,7 +15,7 @@ const {
 ---
 
 <div
-  class="mb-4 overflow-hidden rounded-lg shadow-lg flex-grow md:w-1/3 md:max-w-[350px] flex flex-col justify-between bg-white"
+  class="mb-4 overflow-hidden rounded-lg shadow-lg drop-shadow flex-grow md:w-1/3 md:max-w-[350px] flex flex-col justify-between bg-white"
 >
   <div class="px-6 py-8 bg-white dark:bg-gray-800 sm:p-10 sm:pb-6">
     <div class="flex justify-center">
@@ -44,14 +44,15 @@ const {
         ))
       }
     </ul>
-    <div class="mt-6 rounded-md shadow">
+    <div class="mt-6 rounded-md flex flex-col gap-8">
       <Link
         href="https://forms.gle/KAD3W7jwE4buhuhK7"
         target="_blank"
-        className="flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-gray-700 transition duration-150 ease-in-out bg-[#ff8c00c2] border border-transparent rounded-md hover:bg-[#ffba67c2] focus:outline-none focus:shadow-outline"
+        className="flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-gray-700 transition duration-150 ease-in-out bg-[#ff8c00c2] border border-transparent rounded-md hover:bg-[#ffba67c2] focus:outline-none focus:shadow-outline shadow"
       >
         Incribirme
       </Link>
+      <slot />
     </div>
   </div>
 </div>
