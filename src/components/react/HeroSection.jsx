@@ -76,7 +76,7 @@ export const HeroSection = ({ carrouselImages }) => {
             <a
               href="https://forms.gle/KAD3W7jwE4buhuhK7"
               target="_blank"
-              className="block w-full rounded bg-[#ff8c00c2] px-12 py-3 text-sm font-medium text-white shadow hover:bg-[#ff8c00e8] focus:outline-none focus:ring active:bg-[#ff8c00c2] sm:w-auto"
+              className="block w-full rounded transition-colors bg-[#ff8c00c2] px-12 py-3 text-sm font-medium text-white shadow hover:bg-[#ff8c00e8] focus:outline-none focus:ring active:bg-[#ff8c00c2] sm:w-auto"
             >
               Inscribirme
             </a>

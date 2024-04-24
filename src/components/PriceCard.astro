@@ -46,13 +46,13 @@ const {
       }
     </ul>
     <div class="mt-6 rounded-md flex flex-col gap-8">
-      <Link
+      <a
         href={formLink}
         target="_blank"
-        className="flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-gray-700 transition duration-150 ease-in-out bg-[#ff8c00c2] border border-transparent rounded-md hover:bg-[#ffba67c2] focus:outline-none focus:shadow-outline shadow"
+        class="flex items-center justify-center px-5 py-3 text-base font-medium leading-6 transition-colors duration-250 text-white bg-[#ff8c00c2] border border-transparent rounded-md hover:bg-[#ff8c00e8] focus:shadow-outline shadow active:bg-[#ff8c00c2]"
       >
         Incribirme
-      </Link>
+      </a>
       <slot />
     </div>
   </div>
