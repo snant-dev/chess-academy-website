@@ -6,6 +6,7 @@ const {
   title,
   price,
   timeSpectrum = "mes",
+  formLink = "#",
   characteristics = [
     "Acceso a una clase grupal por semana",
     "Participación en 1 evento online mensual",
@@ -46,7 +47,7 @@ const {
     </ul>
     <div class="mt-6 rounded-md flex flex-col gap-8">
       <Link
-        href="https://forms.gle/KAD3W7jwE4buhuhK7"
+        href={formLink}
         target="_blank"
         className="flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-gray-700 transition duration-150 ease-in-out bg-[#ff8c00c2] border border-transparent rounded-md hover:bg-[#ffba67c2] focus:outline-none focus:shadow-outline shadow"
       >
