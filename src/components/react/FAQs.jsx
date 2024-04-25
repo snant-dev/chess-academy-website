@@ -58,7 +58,7 @@ export const FAQs = () => {
     {
       title: "¿Cuántos estudiantes hay en cada clase grupal?",
       content:
-        'En nuestras clases grupales, cada una cuenta con un máximo de 15 alumnos que comparten el mismo "Camino" y tienen un nivel de juego similar. Esta organización nos permite garantizar un ambiente de aprendizaje dinámico y participativo, donde todos los estudiantes puedan recibir una atención personalizada y aprovechar al máximo las sesiones de aprendizaje en grupo.',
+        'En nuestras clases grupales, cada una cuenta con un máximo de 15 estudiantes que comparten el mismo "Camino" y tienen un nivel de juego similar. Esta organización nos permite garantizar un ambiente de aprendizaje dinámico y participativo, donde todos los estudiantes puedan recibir una atención personalizada y aprovechar al máximo las sesiones de aprendizaje en grupo.',
     },
     {
       title: "¿Cuál es la duración y frecuencia de las clases grupales?",
@@ -95,7 +95,7 @@ export const FAQs = () => {
     {
       title: "¿Qué sucede si no puedo asistir a una clase programada?",
       content:
-        "Es responsabilidad de cada alumno contar con la disponibilidad necesaria para participar en la clase en el horario programado. Sin embargo, en caso de no poder asistir, recibirás los materiales utilizados en la misma para que puedas revisarlos y mantener tu aprendizaje al día. De esta manera, te aseguramos que no te perderás ningún contenido importante y podrás continuar tu progreso en el ajedrez.",
+        "Es responsabilidad de cada estudiante contar con la disponibilidad necesaria para participar en la clase en el horario programado. Sin embargo, en caso de no poder asistir, recibirás los materiales utilizados en la misma para que puedas revisarlos y mantener tu aprendizaje al día. De esta manera, te aseguramos que no te perderás ningún contenido importante y podrás continuar tu progreso en el ajedrez.",
     },
     {
       title:
