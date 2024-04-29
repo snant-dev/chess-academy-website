@@ -27,9 +27,7 @@ import PriceCard from "./PriceCard.astro";
         "Acceso a los materiales de estudio",
         "Mini-clase de posicionamiento de nivel. (Única vez)",
       ]}
-    >
-      <div id="paypal-container-YMZH4K6A5L7L2"></div>
-    </PriceCard>
+    />
 
     <PriceCard
       title="Intermedio"
@@ -40,9 +38,7 @@ import PriceCard from "./PriceCard.astro";
         "Dos clases grupales por semana",
         "Participación en todos los eventos online",
       ]}
-    >
-      <div id="paypal-container-YNU8CVR5CXJHG"></div>
-    </PriceCard>
+    />
 
     <PriceCard
       title="Premium"
@@ -53,9 +49,7 @@ import PriceCard from "./PriceCard.astro";
         "Dos clases privadas semales con elección de profesor",
         'Un "Diagnóstico Deportivo" anual',
       ]}
-    >
-      <div id="paypal-container-SJ988V4M2Y72W"></div>
-    </PriceCard>
+    />
 
     <PriceCard
       title="Diagnostico Deportivo"
@@ -67,9 +61,7 @@ import PriceCard from "./PriceCard.astro";
         "Análisis de puntos fuertes y débiles",
         "Guía con estrategias y un plan detallado para mejorar cada aspecto",
       ]}
-    >
-      <div id="paypal-container-CRYU7NEA9YCRA"></div>
-    </PriceCard>
+    />
   </div>
   <p class="text-center mt-8">
     Todos los precios son en $USD. Si eres residente de Argentina puedes
@@ -78,43 +70,11 @@ import PriceCard from "./PriceCard.astro";
 </section>
 
 <!-- Paypal Client Script -->
-<script
-  is:inline
-  src="https://www.paypal.com/sdk/js?client-id=BAA4oGJFloSLmX-ZqZphPn3n7fRqm36uq0EQ4D0nW1Xe4kjs0-VksfP0YDvJnCoP6n3zeni2ZqAbvw0R_Q&components=hosted-buttons&disable-funding=venmo&currency=USD"
-></script>
 
 <!-- Paypal Script: Básico -->
-<script is:inline>
-  paypal
-    .HostedButtons({
-      hostedButtonId: "YMZH4K6A5L7L2",
-    })
-    .render("#paypal-container-YMZH4K6A5L7L2");
-</script>
 
 <!-- Paypal Script: Intermedio -->
-<script is:inline>
-  paypal
-    .HostedButtons({
-      hostedButtonId: "YNU8CVR5CXJHG",
-    })
-    .render("#paypal-container-YNU8CVR5CXJHG");
-</script>
 
 <!-- Paypal Script: Premium -->
-<script is:inline>
-  paypal
-    .HostedButtons({
-      hostedButtonId: "SJ988V4M2Y72W",
-    })
-    .render("#paypal-container-SJ988V4M2Y72W");
-</script>
 
 <!-- Paypal Script: Diganóstico Deportivo -->
-<script is:inline>
-  paypal
-    .HostedButtons({
-      hostedButtonId: "CRYU7NEA9YCRA",
-    })
-    .render("#paypal-container-CRYU7NEA9YCRA");
-</script>
