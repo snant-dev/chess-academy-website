@@ -1,10 +1,18 @@
 import { useState } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
+import GuillerminImg from "../../assets/img/testimonials/guillermo_trabes.jpg";
 import PiliImg from "../../assets/img/testimonials/pilar_reinoso.jpg";
 import GaspiImg from "../../assets/img/testimonials/gaspar_reinoso.jpg";
 
 export const TestimonialsSection = () => {
   const testimonials = [
+    {
+      avatar: GuillerminImg.src,
+      name: "Guillermo Trabes",
+      title: "Doctor en Ciencias de la Computación.",
+      quote:
+        "El ajedrez ha sido fundamental en mi vida, ya que potenció habilidades como el pensamiento crítico y la resolución de problemas. Esto me permitió abordar desafíos complejos de manera efectiva, alcanzando ideas profundas en mis estudios y trabajo. Además, el ajedrez me brindó amistades duraderas. Es, sin duda, una herramienta enriquecedora en distintos aspectos de la vida.",
+    },
     {
       avatar: PiliImg.src,
       name: "María Pilar Reinoso",
